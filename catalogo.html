@@ -32,8 +32,9 @@
             theme: {
                 extend: {
                     colors: {
-                        'dark-bg': '#161A1E',
-                        'bright-green': '#00FFC2',
+                        'primary-blue': '#007BEB',
+                        'medium-blue': '#005ECF',
+                        'dark-blue-text': '#142C57',
                     }
                 },
                 fontFamily: {
@@ -43,28 +44,28 @@
         }
     </script>
 </head>
-<body class="bg-dark-bg text-white font-sans">
+<body class="bg-white text-dark-blue-text font-sans">
 
     <!-- Header -->
-    <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-dark-bg shadow-lg">
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white shadow-lg">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-3xl font-bold text-bright-green">Epic Sistems</a>
+            <a href="index.html" class="text-3xl font-bold text-primary-blue">Epic Sistems</a>
             <nav class="hidden md:flex space-x-8">
-                <a href="index.html" class="hover:text-bright-green transition-colors">Inicio</a>
-                <a href="catalogo.html" class="hover:text-bright-green transition-colors">Catálogo</a>
-                <a href="nosotros.html" class="hover:text-bright-green transition-colors">Nosotros</a>
-                <a href="contacto.html" class="hover:text-bright-green transition-colors">Contacto</a>
+                <a href="index.html" class="hover:text-primary-blue transition-colors">Inicio</a>
+                <a href="catalogo.html" class="hover:text-primary-blue transition-colors">Catálogo</a>
+                <a href="nosotros.html" class="hover:text-primary-blue transition-colors">Nosotros</a>
+                <a href="contacto.html" class="hover:text-primary-blue transition-colors">Contacto</a>
             </nav>
-            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+            <button id="mobile-menu-button" class="md:hidden text-dark-blue-text focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden">
-            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Inicio</a>
-            <a href="catalogo.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Catálogo</a>
-            <a href="nosotros.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Nosotros</a>
-            <a href="contacto.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Contacto</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Inicio</a>
+            <a href="catalogo.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Catálogo</a>
+            <a href="nosotros.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Nosotros</a>
+            <a href="contacto.html" class="block py-2 px-4 text-sm hover:bg-gray-100">Contacto</a>
         </div>
     </header>
 
@@ -72,18 +73,18 @@
     <main class="pt-32">
         <section class="py-16 text-center">
             <div class="container mx-auto px-6">
-                <h1 class="text-4xl md:text-5xl font-bold text-bright-green">Nuestro Catálogo</h1>
-                <p class="text-lg text-gray-300 mt-4">Explora una selección de nuestros mejores trabajos.</p>
+                <h1 class="text-4xl md:text-5xl font-bold text-primary-blue">Nuestro Catálogo</h1>
+                <p class="text-lg text-gray-600 mt-4">Explora una selección de nuestros mejores trabajos.</p>
             </div>
         </section>
 
         <!-- Category Menu -->
         <section class="py-8">
             <div class="container mx-auto px-6 flex justify-center space-x-4 md:space-x-8">
-                <button class="category-btn bg-bright-green text-dark-bg font-bold py-2 px-6 rounded-full">Todos</button>
-                <button class="category-btn text-white font-bold py-2 px-6 rounded-full">Sitios Web</button>
-                <button class="category-btn text-white font-bold py-2 px-6 rounded-full">E-commerce</button>
-                <button class="category-btn text-white font-bold py-2 px-6 rounded-full">Portafolios</button>
+                <button class="category-btn bg-primary-blue text-white font-bold py-2 px-6 rounded-full">Todos</button>
+                <button class="category-btn text-dark-blue-text font-bold py-2 px-6 rounded-full">Sitios Web</button>
+                <button class="category-btn text-dark-blue-text font-bold py-2 px-6 rounded-full">E-commerce</button>
+                <button class="category-btn text-dark-blue-text font-bold py-2 px-6 rounded-full">Portafolios</button>
             </div>
         </section>
 
@@ -92,81 +93,81 @@
             <div class="container mx-auto px-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Project Card 1 -->
-                    <div class="project-card bg-gray-800 rounded-lg shadow-lg overflow-hidden group" data-category="sitios web">
+                    <div class="project-card bg-gray-50 rounded-lg shadow-lg overflow-hidden group" data-category="sitios web">
                         <div class="relative">
-                            <img src="https://via.placeholder.com/400x300.png/00FFC2/161A1E?text=Sitio+Web" alt="Proyecto 1" class="w-full h-64 object-cover">
+                            <img src="https://via.placeholder.com/400x300.png/007BEB/FFFFFF?text=Sitio+Web" alt="Proyecto 1" class="w-full h-64 object-cover">
                             <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <a href="#" class="bg-bright-green text-dark-bg font-bold py-2 px-6 rounded-full">Ver más</a>
+                                <a href="#" class="bg-primary-blue text-white font-bold py-2 px-6 rounded-full">Ver más</a>
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-2xl font-bold text-bright-green mb-2">Sitio Web para Negocio</h3>
-                            <p class="text-gray-300">Un sitio web corporativo moderno y responsivo.</p>
+                            <h3 class="text-2xl font-bold text-primary-blue mb-2">Sitio Web para Negocio</h3>
+                            <p class="text-gray-600">Un sitio web corporativo moderno y responsivo.</p>
                         </div>
                     </div>
                     <!-- Project Card 2 -->
-                    <div class="project-card bg-gray-800 rounded-lg shadow-lg overflow-hidden group" data-category="e-commerce">
+                    <div class="project-card bg-gray-50 rounded-lg shadow-lg overflow-hidden group" data-category="e-commerce">
                          <div class="relative">
-                            <img src="https://via.placeholder.com/400x300.png/00FFC2/161A1E?text=E-commerce" alt="Proyecto 2" class="w-full h-64 object-cover">
+                            <img src="https://via.placeholder.com/400x300.png/007BEB/FFFFFF?text=E-commerce" alt="Proyecto 2" class="w-full h-64 object-cover">
                             <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <a href="#" class="bg-bright-green text-dark-bg font-bold py-2 px-6 rounded-full">Ver más</a>
+                                <a href="#" class="bg-primary-blue text-white font-bold py-2 px-6 rounded-full">Ver más</a>
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-2xl font-bold text-bright-green mb-2">Tienda E-commerce</h3>
-                            <p class="text-gray-300">Plataforma de venta en línea con pasarelas de pago.</p>
+                            <h3 class="text-2xl font-bold text-primary-blue mb-2">Tienda E-commerce</h3>
+                            <p class="text-gray-600">Plataforma de venta en línea con pasarelas de pago.</p>
                         </div>
                     </div>
                     <!-- Project Card 3 -->
-                    <div class="project-card bg-gray-800 rounded-lg shadow-lg overflow-hidden group" data-category="portafolios">
+                    <div class="project-card bg-gray-50 rounded-lg shadow-lg overflow-hidden group" data-category="portafolios">
                          <div class="relative">
-                            <img src="https://via.placeholder.com/400x300.png/00FFC2/161A1E?text=Portafolio" alt="Proyecto 3" class="w-full h-64 object-cover">
+                            <img src="https://via.placeholder.com/400x300.png/007BEB/FFFFFF?text=Portafolio" alt="Proyecto 3" class="w-full h-64 object-cover">
                             <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <a href="#" class="bg-bright-green text-dark-bg font-bold py-2 px-6 rounded-full">Ver más</a>
+                                <a href="#" class="bg-primary-blue text-white font-bold py-2 px-6 rounded-full">Ver más</a>
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-2xl font-bold text-bright-green mb-2">Portafolio Creativo</h3>
-                            <p class="text-gray-300">Un portafolio visualmente atractivo para un fotógrafo.</p>
+                            <h3 class="text-2xl font-bold text-primary-blue mb-2">Portafolio Creativo</h3>
+                            <p class="text-gray-600">Un portafolio visualmente atractivo para un fotógrafo.</p>
                         </div>
                     </div>
                     <!-- Project Card 4 -->
-                    <div class="project-card bg-gray-800 rounded-lg shadow-lg overflow-hidden group" data-category="sitios web">
+                    <div class="project-card bg-gray-50 rounded-lg shadow-lg overflow-hidden group" data-category="sitios web">
                         <div class="relative">
-                            <img src="https://via.placeholder.com/400x300.png/00FFC2/161A1E?text=Sitio+Web" alt="Proyecto 4" class="w-full h-64 object-cover">
+                            <img src="https://via.placeholder.com/400x300.png/007BEB/FFFFFF?text=Sitio+Web" alt="Proyecto 4" class="w-full h-64 object-cover">
                             <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <a href="#" class="bg-bright-green text-dark-bg font-bold py-2 px-6 rounded-full">Ver más</a>
+                                <a href="#" class="bg-primary-blue text-white font-bold py-2 px-6 rounded-full">Ver más</a>
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-2xl font-bold text-bright-green mb-2">Landing Page</h3>
-                            <p class="text-gray-300">Página de aterrizaje para campaña de marketing.</p>
+                            <h3 class="text-2xl font-bold text-primary-blue mb-2">Landing Page</h3>
+                            <p class="text-gray-600">Página de aterrizaje para campaña de marketing.</p>
                         </div>
                     </div>
                     <!-- Project Card 5 -->
-                    <div class="project-card bg-gray-800 rounded-lg shadow-lg overflow-hidden group" data-category="e-commerce">
+                    <div class="project-card bg-gray-50 rounded-lg shadow-lg overflow-hidden group" data-category="e-commerce">
                          <div class="relative">
-                            <img src="https://via.placeholder.com/400x300.png/00FFC2/161A1E?text=E-commerce" alt="Proyecto 5" class="w-full h-64 object-cover">
+                            <img src="https://via.placeholder.com/400x300.png/007BEB/FFFFFF?text=E-commerce" alt="Proyecto 5" class="w-full h-64 object-cover">
                             <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <a href="#" class="bg-bright-green text-dark-bg font-bold py-2 px-6 rounded-full">Ver más</a>
+                                <a href="#" class="bg-primary-blue text-white font-bold py-2 px-6 rounded-full">Ver más</a>
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-2xl font-bold text-bright-green mb-2">Marketplace</h3>
-                            <p class="text-gray-300">Plataforma para que múltiples vendedores ofrezcan sus productos.</p>
+                            <h3 class="text-2xl font-bold text-primary-blue mb-2">Marketplace</h3>
+                            <p class="text-gray-600">Plataforma para que múltiples vendedores ofrezcan sus productos.</p>
                         </div>
                     </div>
                     <!-- Project Card 6 -->
-                    <div class="project-card bg-gray-800 rounded-lg shadow-lg overflow-hidden group" data-category="portafolios">
+                    <div class="project-card bg-gray-50 rounded-lg shadow-lg overflow-hidden group" data-category="portafolios">
                          <div class="relative">
-                            <img src="https://via.placeholder.com/400x300.png/00FFC2/161A1E?text=Portafolio" alt="Proyecto 6" class="w-full h-64 object-cover">
+                            <img src="https://via.placeholder.com/400x300.png/007BEB/FFFFFF?text=Portafolio" alt="Proyecto 6" class="w-full h-64 object-cover">
                             <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <a href="#" class="bg-bright-green text-dark-bg font-bold py-2 px-6 rounded-full">Ver más</a>
+                                <a href="#" class="bg-primary-blue text-white font-bold py-2 px-6 rounded-full">Ver más</a>
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-2xl font-bold text-bright-green mb-2">Portafolio de Agencia</h3>
-                            <p class="text-gray-300">Muestra de trabajos para una agencia creativa.</p>
+                            <h3 class="text-2xl font-bold text-primary-blue mb-2">Portafolio de Agencia</h3>
+                            <p class="text-gray-600">Muestra de trabajos para una agencia creativa.</p>
                         </div>
                     </div>
                 </div>
@@ -175,35 +176,35 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-10 mt-16">
+    <footer class="bg-gray-100 text-dark-blue-text py-10 mt-16">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-2xl font-bold text-bright-green mb-4">Epic Sistems</h3>
-                    <p class="text-gray-400">Soluciones digitales para el mundo de hoy.</p>
+                    <h3 class="text-2xl font-bold text-primary-blue mb-4">Epic Sistems</h3>
+                    <p class="text-gray-600">Soluciones digitales para el mundo de hoy.</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Enlaces Rápidos</h4>
                     <ul>
-                        <li><a href="index.html" class="hover:text-bright-green">Inicio</a></li>
-                        <li><a href="catalogo.html" class="hover:text-bright-green">Catálogo</a></li>
-                        <li><a href="nosotros.html" class="hover:text-bright-green">Nosotros</a></li>
-                        <li><a href="contacto.html" class="hover:text-bright-green">Contacto</a></li>
+                        <li><a href="index.html" class="hover:text-primary-blue">Inicio</a></li>
+                        <li><a href="catalogo.html" class="hover:text-primary-blue">Catálogo</a></li>
+                        <li><a href="nosotros.html" class="hover:text-primary-blue">Nosotros</a></li>
+                        <li><a href="contacto.html" class="hover:text-primary-blue">Contacto</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Redes Sociales</h4>
                     <div class="flex space-x-4">
-                        <a href="#" aria-label="Facebook" class="text-gray-400 hover:text-bright-green"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
-                        <a href="#" aria-label="Instagram" class="text-gray-400 hover:text-bright-green"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"/></svg></a>
-                        <a href="#" aria-label="TikTok" class="text-gray-400 hover:text-bright-green"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-2.43.05-4.88-.35-6.73-1.77-1.94-1.49-3.27-3.77-3.4-6.23-.01-1.42.01-2.84.01-4.26 0-1.7.14-3.4.43-5.07.22-1.26.58-2.5 1.07-3.71.18-.42.38-.83.59-1.24.22-.42.46-.84.7-1.26.38-.66.83-1.29 1.35-1.89.5-.58 1.06-1.1 1.66-1.56.68-.52 1.43-.95 2.2-1.28.41-.17.82-.32 1.25-.45.36-.11.72-.2 1.09-.28.1-.02.19-.04.29-.05.09-.01.18-.02.28-.02z"/></svg></a>
-                        <a href="#" aria-label="WhatsApp" class="text-gray-400 hover:text-bright-green"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99 0-3.902-.539-5.57-1.528l-6.273 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.447-4.433-9.886-9.888-9.886-5.448 0-9.886 4.434-9.889 9.885-.002 2.024.604 3.933 1.688 5.592l-1.155 4.22a.5.5 0 0 0 .623.622l4.22-1.154zm-.499-6.108c-.08-.136-.239-.217-.394-.217-.122 0-.244.036-.354.106-.11.07-.217.166-.302.282-.085.116-.15.25-.19.394-.04.144-.059.297-.059.451 0 .154.02.307.059.451.04.144.105.278.19.394.085.116.192.212.302.282.11.07.232.106.354.106.155 0 .314-.08.394-.217l.004-.007c.08-.136.12-.294.12-.451 0-.157-.04-.315-.12-.451l-.004-.007z"/></svg></a>
+                        <a href="#" aria-label="Facebook" class="text-gray-600 hover:text-primary-blue"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+                        <a href="#" aria-label="Instagram" class="text-gray-600 hover:text-primary-blue"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"/></svg></a>
+                        <a href="#" aria-label="TikTok" class="text-gray-600 hover:text-primary-blue"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-2.43.05-4.88-.35-6.73-1.77-1.94-1.49-3.27-3.77-3.4-6.23-.01-1.42.01-2.84.01-4.26 0-1.7.14-3.4.43-5.07.22-1.26.58-2.5 1.07-3.71.18-.42.38-.83.59-1.24.22-.42.46-.84.7-1.26.38-.66.83-1.29 1.35-1.89.5-.58 1.06-1.1 1.66-1.56.68-.52 1.43-.95 2.2-1.28.41-.17.82-.32 1.25-.45.36-.11.72-.2 1.09-.28.1-.02.19-.04.29-.05.09-.01.18-.02.28-.02z"/></svg></a>
+                        <a href="#" aria-label="WhatsApp" class="text-gray-600 hover:text-primary-blue"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99 0-3.902-.539-5.57-1.528l-6.273 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.447-4.433-9.886-9.888-9.886-5.448 0-9.886 4.434-9.889 9.885-.002 2.024.604 3.933 1.688 5.592l-1.155 4.22a.5.5 0 0 0 .623.622l4.22-1.154zm-.499-6.108c-.08-.136-.239-.217-.394-.217-.122 0-.244.036-.354.106-.11.07-.217.166-.302.282-.085.116-.15.25-.19.394-.04.144-.059.297-.059.451 0 .154.02.307.059.451.04.144.105.278.19.394.085.116.192.212.302.282.11.07.232.106.354.106.155 0 .314-.08.394-.217l.004-.007c.08-.136.12-.294.12-.451 0-.157-.04-.315-.12-.451l-.004-.007z"/></svg></a>
                     </div>
                 </div>
             </div>
-            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-500">
+            <div class="mt-8 pt-8 border-t border-gray-200 text-center text-gray-500">
                 <p>&copy; 2024 Epic Sistems. Todos los derechos reservados.</p>
-                <p><a href="#" class="hover:text-bright-green">Aviso de Privacidad</a></p>
+                <p><a href="#" class="hover:text-primary-blue">Aviso de Privacidad</a></p>
             </div>
         </div>
     </footer>
