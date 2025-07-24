@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#main-header {
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#main-header.bg-dark-bg {
+    background-color: #161A1E;
+    box-shadow: 0 4px 6px -1px rgba(0, 255, 194, 0.1), 0 2px 4px -1px rgba(0, 255, 194, 0.06);
+}
+
+.category-btn {
+    transition: all 0.3s ease-in-out;
+}
+
+.project-card .group-hover\:opacity-100 {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.project-card img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+.form-control {
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
