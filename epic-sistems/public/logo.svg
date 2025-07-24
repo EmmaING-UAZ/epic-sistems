@@ -1,0 +1,6 @@
+<svg width="150" height="40" xmlns="http://www.w3.org/2000/svg">
+  <text x="10" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+    <tspan fill="#007BFF">E</tspan><tspan fill="#003B8F">S</tspan>
+    <tspan x="50" y="30" font-size="20" fill="#333">Epic Sistems</tspan>
+  </text>
+</svg>
